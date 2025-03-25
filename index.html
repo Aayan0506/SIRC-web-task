@@ -11,22 +11,26 @@
 <body>
     <header>
         <nav class="navbar">
-          <div class="logo">Hult Prize</div>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <div class="logo">Hult Prize</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
       <section id="home" class="home">
         <div class="home-content">
           <h1>Join the Hult Prize Challenge</h1>
           <p>Innovate, Pitch, and Win $1M to Change the World</p>
-          <a href="#contact" class="btn">Register Now</a>
         </div>
       </section>
       <section id="about" class="about">
@@ -42,10 +46,10 @@
      <section id="gallery" class="gallery">
       <h2>Gallery</h2>
       <div class="images">
-        <img src="https://via.placeholder.com/300x200" alt="Event Image 1">
-        <img src="https://via.placeholder.com/300x200" alt="Event Image 2">
-        <img src="https://via.placeholder.com/300x200" alt="Event Image 3">
-        <img src="https://via.placeholder.com/300x200" alt="Event Image 4">
+        <img src="/hult2.jpeg">
+        <img src="/hultP1.jpeg" alt="Event Image 2">
+        <img src="/hult2.jpeg" alt="Event Image 3">
+        <img src="/hultP1.jpeg" alt="Event Image 4">
       </div>
     </section>
     <section id="testimonials" class="testimonials">
@@ -83,6 +87,15 @@
           });
         });
       });
+    </script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
