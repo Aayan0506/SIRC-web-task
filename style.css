@@ -30,21 +30,21 @@
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  .logo {
+.logo {
     font-size: 1.5em;
     font-weight: 700;
     color: #e63946;
   }
-  .nav-links li {
+.nav-links li {
     display: inline-block;
     margin-left: 30px;
   }
-  .nav-links li a {
+.nav-links li a {
     font-size: 1em;
     font-weight: 500;
     transition: color 0.3s ease;
   }
-  .nav-links li a:hover {
+.nav-links li a:hover {
     color: #e63946;
   }
 
@@ -56,4 +56,123 @@
     .nav-links li {
       margin-left: 15px;
     }
+    .home-content h1 {
+    font-size: 2.5em;
+    }
+    .home-content p {
+    font-size: 1em;
+    }
+    section {
+    padding: 80px 30px;
+    }
+  }
+  .about {
+    background: #7e579d;
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .timeline {
+    background: #1e4989;
+    text-align: center;
+  }
+  .timeline h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .timeline p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .gallery {
+    background: #f1f1f1;
+    text-align: center;
+  }
+  .gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .images img:hover {
+    transform: scale(1.05);
+  }
+  .testimonials {
+    background: #fff;
+    text-align: center;
+  }
+  .testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .testimonial {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    font-style: italic;
+    color: #555;
+  }
+  .testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+  }
+  .contact {
+    background: #f1f1f1;
+    text-align: center;
+  }
+  .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  .contact button {
+    padding: 12px 30px;
+    background: #e63946;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .contact button:hover {
+    background: #d62828;
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
   }
